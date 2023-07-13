@@ -10,7 +10,7 @@ const addRestaurantEndpoint = async(req, res) => {
 
     await addRestaurant(restaurant);
     
-    return res.json(restaurant);
+    return res.status(201).json(restaurant);
 };
 
 module.exports = { 
