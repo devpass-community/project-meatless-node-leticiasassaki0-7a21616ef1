@@ -10,7 +10,7 @@ const addProductEndpoint = async(req, res) => {
 
     await addProduct(product);
     
-    return res.json(product);
+    return res.status(201).json(product);
 };
 
 module.exports = { 
